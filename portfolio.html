@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,23 +17,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="link logo logo-hero" href="./"><span>Web</span>Studio</a>
-        <ul class="list site-nav">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="active link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="#contacts">Контакты</a></li>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a class="link logo logo-hero" href="./"><span>Web</span>Studio</a>
+          <ul class="list site-nav">
+            <li><a class="link" href="./index.html">Студия</a></li>
+            <li>
+              <a class="active link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list contacts">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list contacts">
-        <li>
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio">
@@ -51,15 +61,17 @@
           </li>
         </ul>
         <ul class="list list-portfolio">
-          <li>
-            <img
-              src="./images/portfolio/img-1.jpg"
-              alt="Технокряк"
-              width="370"
-            />
-            <h2 class="title projects-title">Технокряк</h2>
-            <p class="projects-item">Веб-сайт</p>
-          </li>
+          <div class="card">
+            <li>
+              <img
+                src="./images/portfolio/img-1.jpg"
+                alt="Технокряк"
+                width="370"
+              />
+              <h2 class="title projects-title">Технокряк</h2>
+              <p class="projects-item">Веб-сайт</p>
+            </li>
+          </div>
           <li>
             <img
               src="./images/portfolio/img-2.jpg"
@@ -138,25 +150,25 @@
       </section>
     </main>
     <footer class="dark-dg" id="contacts">
-      <a class="link logo" href="./"><span>Web</span>Studio</a>
-      <p>
-        <a
-          class="link map"
-          href="https://goo.gl/maps/7yWL4o9HkrsM5cYJ9"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          >г. Киев, пр-т Леси Украинки, 26</a
-        >
-      </p>
       <address class="address">
+        <p>
+          <a
+            class="link map"
+            href="https://goo.gl/maps/7yWL4o9HkrsM5cYJ9"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+        </p>
         <ul class="list">
           <li class="list">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
           </li>
           <li class="list">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link" href="tel:+380961111111"> +38 096 111 11 11 </a>
           </li>
         </ul>
       </address>
